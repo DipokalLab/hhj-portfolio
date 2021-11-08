@@ -2,6 +2,8 @@ window.onscroll = function() {scrollEvent()};
 
 let time_now = new Date();
 let time_target_devent = new Date(2018, 11, 18);
+var nav_status = 1;
+
 
 function scrollEvent() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
