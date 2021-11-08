@@ -31,6 +31,11 @@ async function loadSolvedacUserData() {
 
 }
 
+function loadGithubData() {
+  GitHubCalendar("#github_grass", "DipokalLab", { responsive: true, tooltips: false, global_stats: false});
+
+}
+
 
 // Solved AC 티어 계산
 async function calculateSolvedacTier(idx) {     
