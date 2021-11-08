@@ -2,18 +2,19 @@
 header {
 
   padding: 196px 0 150px;
-  background-color: #edeef3;
+  background-color: #f2f4f5;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  
-  
+
+
 }
 
 section {
-  padding: 150px 0;
+  padding: 16px ;
+
 }
-  
+
 .box {
     width: 40px;
     height: 40px;
@@ -44,6 +45,9 @@ section {
   word-break: keep-all;
 
 }
+.icon-dark{
+  color: #000000;
+}
 .btn-outline-insta{
   background-color: transparent;
   border-color: #8a3ab9;
@@ -67,7 +71,7 @@ section {
 
 }
 .content-margin{
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 .card-none{
     outline:0px !important;
@@ -77,6 +81,18 @@ section {
   color:#000;
 
 }
+.card-body{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.card-transparent{
+  box-shadow:none !important;
+
+  background-color: #f2f4f5 !important;
+}
+.card-rounded{
+  border-radius: 22px;
+}
 .card-title{
     font-family: 'Noto Sans KR', sans-serif;
     FONT-SIZE:25px;
@@ -85,7 +101,7 @@ section {
 .card-none-1:hover{
     outline:0px !important;
     border:2px !important;
-    background: url('/img/p1.jpg');
+    background: url('/img/project/p1.jpg');
     background-size:100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,7 +113,7 @@ section {
 .card-none-2:hover{
     outline:0px !important;
     border:2px !important;
-    background: url('/img/p2.jpg');
+    background: url('/img/project/p2.jpg');
     background-size:100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -109,7 +125,7 @@ section {
 .card-none-3:hover{
     outline:0px !important;
     border:2px !important;
-    background: url('/img/p3.jpg');
+    background: url('/img/project/p3.jpg');
     background-size:100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,7 +137,19 @@ section {
 .card-none-4:hover{
     outline:0px !important;
     border:2px !important;
-    background: url('/img/p4.jpg');
+    background: url('/img/project/p4.jpg');
+    background-size:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#fff;
+
+}
+
+.card-none-5:hover{
+    outline:0px !important;
+    border:2px !important;
+    background: url('/img/project/p5.jpg');
     background-size:100%;
     background-position: center;
     background-repeat: no-repeat;
