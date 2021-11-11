@@ -58,6 +58,11 @@ ______ _             _         _     _   _  _   _    ___
 
     <style media="screen">
 
+      .title-link {
+        font-family: 'Noto Sans KR', sans-serif;
+
+      }
+
       .card-transparent{
         box-shadow:none !important;
 
@@ -82,6 +87,19 @@ ______ _             _         _     _   _  _   _    ___
         padding-top:20px !important;
       }
 
+      .icon-light {
+        color: #ffffff;
+      }
+      .icon-dark {
+        color: #000000;
+      }
+
+      .icon-link {
+        margin: 16px !important;
+      }
+
+
+
       .nav-link:hover{
         background-color: #dee1e3;
         border-radius: 8px;
@@ -96,6 +114,60 @@ ______ _             _         _     _   _  _   _    ___
 
       .border {
         border: none !important;
+      }
+
+      .btn-box {
+        padding: 3vh;
+        padding-left: 3vh !important;
+        padding-right: 3vh !important;
+
+      }
+
+      .btn-solvedac {
+        background-color: #4ede79;
+      }
+
+      .btn-solvedac:hover {
+        background-color: #43c96b;
+        font-size: larger;
+      }
+
+      .btn-rocketpunch {
+        background-color: #625be3;
+      }
+
+      .btn-rocketpunch:hover {
+        background-color: #524ccc;
+        font-size: larger;
+
+      }
+
+      .btn-insta {
+        background-color: #dc54de;
+      }
+
+      .btn-insta:hover {
+        background-color: #cc4bce;
+        font-size: larger;
+
+      }
+
+      .btn-blog:hover {
+        font-size: larger;
+
+      }
+      .btn-github:hover {
+        font-size: larger;
+
+      }
+
+      .btn-tistory:hover {
+        font-size: larger;
+
+      }
+
+      .btn-notion:hover {
+        font-size: larger;
       }
     </style>
 
@@ -200,11 +272,42 @@ ______ _             _         _     _   _  _   _    ___
           <div class="card-body">
             <h3 class="font-title">관련 링크</h3>
             <hr class="ml-3 mr-3">
-            <button class="btn btn-danger mt-4" onclick="location.href='https://solved.ac/profile/dipokal'">백준 (solved.ac)</button>
-            <button class="btn btn-warning mt-4 text-light" onclick="location.href='https://freezing-pluto-006.notion.site/2d2f57b649ef462a92ea6fbab88eeda7'">노션 (project)</button>
-            <button class="btn btn-success mt-4 text-light" onclick="location.href='https://www.rocketpunch.com/@hhj'">포트폴리오 (rocketpunch)</button>
-            <button class="btn btn-info mt-4 text-light" onclick="location.href='https://www.instagram.com/dipokal_hhj/'">인스타그램 (instagram)</button>
-            <button class="btn btn-primary mt-4 text-light" onclick="location.href='https://devent.tistory.com/'">개인블로그 (tistory)</button>
+            <div class="row">
+              <div class="col-lg-6">
+                <button class="btn btn-box btn-solvedac  mt-4" onclick="location.href='https://solved.ac/profile/dipokal'"><i class="fas icon-light icon-link fa-code"></i></button> 
+                <p class="title-link">백준 (solved.ac)</p>
+  
+              </div>
+              <div class="col-lg-6">
+                <button class="btn btn-box btn-light btn-notion mt-4 text-light" onclick="location.href='https://freezing-pluto-006.notion.site/2d2f57b649ef462a92ea6fbab88eeda7'"><i class="fas icon-dark icon-link fa-project-diagram"></i></button>
+                <p class="title-link">프로젝트 (notion)</p>
+  
+              </div>
+              <div class="col-lg-6">
+                <button class="btn btn-box btn-rocketpunch mt-4 text-light" onclick="location.href='https://www.rocketpunch.com/@hhj'"><i class="fas icon-light icon-link fa-chart-line"></i></button>
+                <p class="title-link">포트폴리오 (rocketpunch)</p>
+  
+              </div>
+
+              <div class="col-lg-6">
+                <button class="btn btn-box btn-insta mt-4 text-light" onclick="location.href='https://www.instagram.com/dipokal_hhj/'"><i class="fab icon-light icon-link fa-instagram"></i></button>
+                <p class="title-link">인스타그램 (instagram)</p>
+  
+              </div>
+
+              <div class="col-lg-6">
+                <button class="btn btn-box btn-primary btn-blog mt-4 text-light" onclick="location.href='https://devent.tistory.com/'"><i class="fas icon-light icon-link fa-align-left"></i></button>
+                <p class="title-link">개인블로그 (tistory)</p>
+  
+              </div>
+
+              <div class="col-lg-6">
+                <button class="btn btn-box btn-dark btn-github mt-4 text-light" onclick="location.href='https://github.com/DipokalLab'"><i class="fab icon-light icon-link fa-github"></i></button>
+                <p class="title-link">깃허브 (github)</p>
+  
+              </div>
+            </div>
+
 
 
           </div>
