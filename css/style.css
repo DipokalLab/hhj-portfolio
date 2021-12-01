@@ -157,3 +157,13 @@ section {
     color:#fff;
 
 }
+
+.card-team:hover {
+  cursor : pointer;
+  background-color: #ccd8ed;
+
+}
+
+.btn-menu:hover {
+  cursor: pointer;
+}
