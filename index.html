@@ -84,7 +84,15 @@ ______ _             _         _     _   _  _   _    ___
             </li>
             
             <li class="nav-item">
-              <a class="btn-menu nav-link js-scroll-trigger text-dark font-title" href="https://www.rocketpunch.com/@hhj"><i class="fas fa-portrait"></i> 포트폴리오</a>
+              <a class="btn-menu nav-link js-scroll-trigger text-dark font-title" data-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-bars icon-dark"></i> Menu
+              </a>
+              <div class="site-header dropdown-menu dropdown-menu-right mr-4 rounded">
+                <h6 class="dropdown-header">서브 메뉴</h6>
+
+                <button class="dropdown-item" onclick="window.open('https://smoother.kr/@dipokal')" type="button"><i class="fas fa-portrait"></i> 스무더 프로필</button>
+                <button class="dropdown-item" onclick="loadPage('./title.html')" type="button"><i class="fas fa-globe-americas"></i> 타이틀</button>
+              </div>
             </li>
           </ul>
         </div>
