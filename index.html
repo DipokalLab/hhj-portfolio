@@ -65,7 +65,7 @@ ______ _             _         _     _   _  _   _    ___
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger nav-title text-dark font-title" href="/">Dipokal</a>
+        <a class="navbar-brand js-scroll-trigger nav-title text-dark font-title" onclick="loadMainPage()">Dipokal</a>
         <button class="navbar-toggler btn-tp" onclick="changeNavBtn()" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars icon-dark" id="navBtn"></i>
         </button>
@@ -128,13 +128,15 @@ ______ _             _         _     _   _  _   _    ___
 
     <script>
 
+
+
       window.onload = function() {
         loadPage('./main.html')
-
         setTimeout(() => {
           loadSolvedacUserData()
           loadGithubData()
         }, 1100);
+
 
 
       }
