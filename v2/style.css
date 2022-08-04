@@ -1,0 +1,87 @@
+.bg-darker {
+    background-color: #16181a !important;
+}
+
+
+.btn-darker {
+    background-color: #16181a !important;
+    color: #b9b9b9;
+}
+
+.btn-darker:hover {
+    background-color: #16181a !important;
+    color: #ffffff;
+}
+
+
+.btn-dark > .active {
+    background-color: #26292d !important;
+
+}
+
+.btn-gray {
+    background-color: #343a40;
+    color: #ebebeb;
+}
+
+.btn-gray:hover {
+    background-color: #495057;
+    color: #ffffff;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+
+}
+
+
+.card-footer {
+    border-top: none !important;
+}
+
+.card-link:hover {
+    color: #cdcdcd;
+}
+
+.card {
+    border-radius: 10px !important;
+}
+
+
+.rounded-start {
+
+    border-radius: 10px !important;
+
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #16181a;
+    color: #b9b9b9;
+}
+
+.nav-link:hover {
+    background-color: #16181a;
+    color: #cdcdcd;
+}
+
+
+.container-footer {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+
+}
+h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+h3 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+h5 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}

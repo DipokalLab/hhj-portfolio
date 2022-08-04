@@ -25,9 +25,9 @@ async function loadSolvedacUserData() {
     let tier = document.querySelector('#solvedTier');
     let maxstreak = document.querySelector('#solvedMaxStreak');
 
-    count.innerHTML = `백준에서 푼 문제 수 <b class="text-primary">${data.solvedCount}</b>`;
-    tier.innerHTML = `백준 티어 <b class="text-primary">${calculateTier}</b>`;
-    maxstreak.innerHTML = `최대 연속 문제 풀이일 수 <b class="text-primary">${data.maxStreak}일</b>`;
+    count.innerHTML = `백준에서 <b class="text-primary">${data.solvedCount}문제</b>를 해결했습니다.`;
+    tier.innerHTML = `Solvedac 티어는 <b class="text-primary">${calculateTier}</b> 입니다.`;
+    maxstreak.innerHTML = `<b class="text-warning">${data.maxStreak}일 연속</b>으로 한 문제 이상 해결했었습니다.`;
 
 }
 
