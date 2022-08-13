@@ -270,32 +270,174 @@
           <div class="row m-0 pt-2">
 
             <div class="d-lg-flex p-0 align-items-start">
-              <div class="nav flex-lg-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <button class="btn btn-dark active mb-2 me-2" id="v-pills-BackEnd-tab" data-bs-toggle="pill" data-bs-target="#v-pills-BackEnd" type="button" role="tab" aria-controls="v-pills-BackEnd" aria-selected="true">BackEnd</button>
-                <button class="btn btn-dark mb-2 me-2" id="v-pills-DevOps-tab" data-bs-toggle="pill" data-bs-target="#v-pills-DevOps" type="button" role="tab" aria-controls="v-pills-DevOps" aria-selected="false">DevOps</button>
-                <button class="btn btn-dark mb-2 me-2" id="v-pills-FrontEnd-tab" data-bs-toggle="pill" data-bs-target="#v-pills-FrontEnd" type="button" role="tab" aria-controls="v-pills-FrontEnd" aria-selected="false">FrontEnd</button>
-                <button class="btn btn-dark mb-2 me-2" id="v-pills-DataEngineering-tab" data-bs-toggle="pill" data-bs-target="#v-pills-DataEngineering" type="button" role="tab" aria-controls="v-pills-DataEngineering" aria-selected="false">DataEngineering</button>
-                <button class="btn btn-dark mb-2 me-2" id="v-pills-Design-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Design" type="button" role="tab" aria-controls="v-pills-Design" aria-selected="false">Design</button>
+              <div class="nav flex-lg-column nav-pills me-3 mb-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="btn btn-dark mt-2 me-2 active" id="v-pills-BackEnd-tab" data-bs-toggle="pill" data-bs-target="#v-pills-BackEnd" type="button" role="tab" aria-controls="v-pills-BackEnd" aria-selected="true">BackEnd</button>
+                <button class="btn btn-dark mt-2 me-2" id="v-pills-DevOps-tab" data-bs-toggle="pill" data-bs-target="#v-pills-DevOps" type="button" role="tab" aria-controls="v-pills-DevOps" aria-selected="false">DevOps</button>
+                <button class="btn btn-dark mt-2 me-2" id="v-pills-FrontEnd-tab" data-bs-toggle="pill" data-bs-target="#v-pills-FrontEnd" type="button" role="tab" aria-controls="v-pills-FrontEnd" aria-selected="false">FrontEnd</button>
+                <button class="btn btn-dark mt-2 me-2" id="v-pills-DataEngineering-tab" data-bs-toggle="pill" data-bs-target="#v-pills-DataEngineering" type="button" role="tab" aria-controls="v-pills-DataEngineering" aria-selected="false">DataEngineering</button>
+                <button class="btn btn-dark mt-2 me-2" id="v-pills-Design-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Design" type="button" role="tab" aria-controls="v-pills-Design" aria-selected="false">Design</button>
 
               </div>
               <div class="tab-content w-100" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="v-pills-BackEnd" role="tabpanel" aria-labelledby="v-pills-BackEnd-tab">
-                  
-                  <div class="card h-100 bg-dark mb-3">
-                    <div class="card-body w-100">
-                      <p class="text-secondary p-0">NodeJS <span class="badge badge-blue-fill">메인 기술</span></p>
-                      <p class="text-secondary p-0">MariaDB <span class="badge badge-blue-fill">메인 기술</span></p>
-                      <p class="text-secondary p-0">Docker <span class="badge badge-blue-fill">메인 기술</span></p>
 
-                      <p class="text-secondary p-0">Sqlite3 <span class="badge badge-blue-fill"></span></p>
-                      <p class="text-secondary p-0">Python Flask <span class="badge badge-blue-fill"></span></p>
-                      <p class="text-secondary p-0">Socket.io <span class="badge badge-blue-fill"></span></p>
-                      <p class="text-secondary p-0">Nginx <span class="badge badge-blue-fill"></span></p>
-                      <p class="text-secondary p-0">JWT <span class="badge badge-blue-fill"></span></p>
+                  <div class="accordion accordion-flush accordion-dark rounded-start" id="accordionFlushExample">
 
-                    
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapseOne">
+                          NodeJS
+                        </button>
+                      </h2>
+                      <div id="flush-collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <span class="badge badge-blue-fill ms-1">메인 기술</span> <br>
+                          NodeJS는 상상을 현실로 만들 수 있을만큼 강력한 백엔드 프레임워크 입니다. 
+                          JS를 메인 스택으로 사용중인 저에게는 오로지 JS만으로도 백앤드, 프론트엔드를 함께 구성할 수 있다는 점에서 시간을 절약해 주었습니다.
+                          동시에 확장성 있는 기능 구성은 소프트웨어를 만드는데에 있어 굉장한 자유도를 주었습니다.
+
+                          이를 구성으로 만든 소프트웨어는 다음과 같습니다.
+
+                          <hhj-project match-tag="NodeJS"></hhj-project>
+                        </div>
+                      </div>
                     </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          MariaDB 
+                        </button>
+                      </h2>
+                      <div id="flush-collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <span class="badge badge-blue-fill ms-1">메인 기술</span> <br>
+
+                          가장 자주 사용하는 RDBMS입니다.
+                          대체로 게시판 CRUD 개발이나, 회원가입, 안정적인 소프트웨어를 구성할떄에 사용합니다. 
+                          <hhj-project match-tag="MariaDB"></hhj-project>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Docker
+                        </button>
+                      </h2>
+                      <div id="flush-collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <span class="badge badge-blue-fill ms-1">메인 기술</span> <br>
+
+                          도커는 소프트웨어를 배포할때 사용합니다.
+                          개발환경과 배포환경의 차이로 인해 생기는 의존성 문제를 해결하기 위해 도입했습니다.
+                          또는 간단한 클라우드 서비스를 제공하거나 로컬에서 실행하기에는 설정할게 많은 프로그램을 동작할때에도 사용합니다.
+                          <hhj-project match-tag="Docker"></hhj-project>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Sqlite3
+                        </button>
+                      </h2>
+                      <div id="flush-collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          서비스 목적이 아닌 적은 데이터 크기의 개인 용도로 사용할 프로젝트이라면
+                          굳이 RDBMS보다는 경량화된 데이터베이스를 활용하는게 효율적입니다.
+
+                          
+                          <hhj-project match-tag="Sqlite3"></hhj-project>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Python Flask
+                        </button>
+                      </h2>
+                      <div id="flush-collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          API 서비스를 만들때 사용합니다.
+                          아니면 딥러닝 프로젝트 진행시 API를 불러와야 하는 상황이 생길때 사용합니다.
+                          
+                          <hhj-project match-tag="Flask"></hhj-project>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Socket.io
+                        </button>
+                      </h2>
+                      <div id="flush-collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          실시간 통신이 필요한 서비스를 개발할때 사용합니다.
+                          보통 JWT 인증기술과 찰떡궁합이라 애용하는 라이브러리 입니다.
+                          
+                          <hhj-project match-tag="Socket.io"></hhj-project>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Nginx
+                        </button>
+                      </h2>
+                      <div id="flush-collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          서버 배포할때 사용합니다.
+                          let encrypt와 호환성이 좋고 devent-deploy 프로젝트에 쓰이는 역방향 프록시도 효과적으로 제공합니다.
+                          동시에 편합니다.
+                          
+                          <hhj-project match-tag="Ngnix"></hhj-project>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Authentication
+                        </button>
+                      </h2>
+                      <div id="flush-collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          JWT
+                          씁니다.
+                          안쓸 수가 없어요.
+                          <hhj-project match-tag="JWT"></hhj-project>
+
+                          
+                          OTP
+                          2차 인증이 필요할때 씁니다.
+                          <hhj-project match-tag="OTP"></hhj-project>
+
+                          OauthServer
+                          OauthServer는 V2의 통합 로그인 기능을 제공할때 쓰였습니다.
+                          아래 Oauth2와는 다릅니다.
+                          <hhj-project match-tag="OauthServer"></hhj-project>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
+                  
 
                 </div>
                 <div class="tab-pane fade" id="v-pills-DevOps" role="tabpanel" aria-labelledby="v-pills-DevOps-tab">
@@ -372,6 +514,7 @@
     <script src="https://cdn.jsdelivr.net/gh/Team-DeVent/devent-designsystem/dist/main.js"></script>
 
     <script src="/js/get_info.js"></script>
+    <script src="/js/components/project.js"></script>
 
     <script>
 
@@ -381,6 +524,8 @@
         }, 1100);
 
       }
+
+
 
       
     </script>
