@@ -5,8 +5,8 @@ class ProjectList extends HTMLElement {
         let table = document.createElement('table')
         table.classList.add("table", "table-dark", "table-striped")
 
-
-        let tbody = document.createElement('thead')
+        let thead = document.createElement('thead')
+        let tbody = document.createElement('tbody')
 
 
         let projects = [
@@ -28,7 +28,7 @@ class ProjectList extends HTMLElement {
             {
                 "title": "Gr0und",
                 "tag": ["NodeJS", "ThreeJS", "Socket.io"],
-                "link": "/"
+                "link": "https://github.com/Team-DeVent/gr0und"
             },
             {
                 "title": "DMP",
@@ -56,24 +56,32 @@ class ProjectList extends HTMLElement {
           return element.tag.findIndex(i => i == match) >= 0 ? true : false
         });
 
+        thead.innerHTML = `<tr class="d-none">
+        <th scope="col">프로젝트 이름</th>
+        <th scope="col">링크</th>
+      </tr>`
+
         result.forEach((element) => {
             let tbody_tr = document.createElement('tr')
             let th_title = document.createElement('th')
             let th_link = document.createElement('th')
-            let link = document.createElement('a')
+            let link = document.createElement('button')
 
             th_title.innerText = element.title
-            link.setAttribute("href", element.link)
-            link.innerText = 'link'
+            link.setAttribute("onclick", `window.open('${element.link}')`)
+            link.innerHTML = '<i class="fas fa-link"></i>'
+            link.classList.add("btn", "text-primary", "text-icon", "btn-transparent")
 
             th_link.appendChild(link)
+            th_link.classList.add("d-flex", "flex-row-reverse")
 
             tbody_tr.appendChild(th_title)
             tbody_tr.appendChild(th_link)
             tbody.appendChild(tbody_tr)
         })
 
-
+        
+        table.appendChild(thead)
         table.appendChild(tbody)
         this.appendChild(table)
     }

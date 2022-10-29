@@ -51,6 +51,22 @@
 }
 
 
+table {
+  border-collapse: separate; 
+  border-spacing: 0 .7em;
+}
+
+tr:hover {
+    background-color: transparent !important;
+}
+
+.text-icon {
+    font-size: 1rem;
+    padding: 0rem .2rem 0rem 2rem !important;
+}
+
+
+
 .rounded-start {
 
     border-radius: 10px !important;
