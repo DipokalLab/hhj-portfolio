@@ -1,0 +1,35 @@
+{
+  "type": "module",
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "HHJ Portfolio",
+  "scripts": {
+    "start": "python3 -m http.server 9000",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack  --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DipokalLab/hhj-portfolio.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DipokalLab/hhj-portfolio/issues"
+  },
+  "homepage": "https://github.com/DipokalLab/hhj-portfolio#readme",
+  "devDependencies": {
+    "css-loader": "^6.6.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "lit": "^2.5.0"
+  }
+}

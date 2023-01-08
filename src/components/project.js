@@ -88,4 +88,4 @@ class ProjectList extends HTMLElement {
 }
 
 
-customElements.define('hhj-project', ProjectList);
+export { ProjectList }
