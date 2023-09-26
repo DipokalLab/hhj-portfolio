@@ -5,7 +5,6 @@
   "description": "HHJ Portfolio",
   "scripts": {
     "start": "python3 -m http.server 9000",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack  --mode=production"
   },
   "repository": {
